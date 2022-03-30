@@ -1,9 +1,9 @@
-package com.leszko.calculator;
+package com.pauliecarroll.multiplier;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Calculator {
-     int sum(int a, int b) {
-          return a + b;
+public class Multiplier {
+     int multiply(int a, int b) {
+          return a * b;
      }
 }

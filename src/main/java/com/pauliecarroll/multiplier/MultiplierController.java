@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-class CalculatorController {
+class MultiplierController {
      @Autowired
      private Multiplier multiplier;
 
-     @RequestMapping("/sum")
+     @RequestMapping("/multiply")
      String multiply(@RequestParam("a") Integer a, 
                 @RequestParam("b") Integer b) {
           return String.valueOf(multiplier.multiply(a, b));
